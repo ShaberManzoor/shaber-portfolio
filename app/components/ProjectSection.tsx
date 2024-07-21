@@ -36,7 +36,7 @@ const projectsData = [
       title: "Indiegram Social Media App",
       description: "Project 4 description",
       image: "/images/projects/indiegram.png",
-      tag: ["React", "Node", "MongoDB", "TypeScript", "Appwrite"],
+      tag: ["React", "Node", "Express", "TypeScript", "Appwrite"],
       gitUrl: "https://github.com/ShaberManzoor/indiegram",
       previewUrl: "https://indiegram.vercel.app/",
     },
