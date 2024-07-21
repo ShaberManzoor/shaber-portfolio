@@ -45,7 +45,11 @@ export default function EmailSection() {
 
         try {
             const res = await axios.post('/api/send', formData);
-            console.log(res.data);
+            setFormData({
+                email: '',
+                subject: '',
+                message: '',
+            })
         } catch (error: any) {
             console.log(error);
         }
@@ -88,6 +92,7 @@ export default function EmailSection() {
                             <input
                                 name='email'
                                 type="email"
+                                value={formData.email}
                                 onChange={handleChange}
                                 id='email'
                                 className='bg-[#18191E] border border-[#33353E] placeholder-[#9CA2AS] text-gray-100 rounded-lg block w-full p-2.5'
@@ -102,6 +107,7 @@ export default function EmailSection() {
                             <input
                                 name='subject'
                                 type="text"
+                                value={formData.subject}
                                 id='subject'
                                 onChange={handleChange}
                                 className='bg-[#18191E] border border-[#33353E] placeholder-[#9CA2AS] text-gray-100 rounded-lg block w-full p-2.5'
@@ -116,6 +122,7 @@ export default function EmailSection() {
                             <textarea
                                 name='message'
                                 id='message'
+                                value={formData.message}
                                 onChange={handleChange}
                                 className='bg-[#18191E] border border-[#33353E] placeholder-[#9CA2AS] text-gray-100 rounded-lg block w-full p-2.5'
                                 placeholder='Drop your message'
