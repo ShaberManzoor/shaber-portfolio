@@ -60,7 +60,7 @@ export default function EmailSection() {
             <div className="absolute inset-0 w-full h-full bg-black z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
             <Boxes />
 
-            <section className='grid md:grid-cols-2 z-20 gap-10'>
+            <section className='grid md:grid-cols-2 z-20 gap-10 mx-4'>
                 <div className="">
                     <h5 className="text-xl font-bold text-white my-2">
                         Let's Connect
